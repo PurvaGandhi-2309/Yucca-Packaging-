@@ -113,7 +113,7 @@ nav>ul{
       height: 200px;
     width: 200px;
      border-radius: 20px;
-    /* background-color:#fff; */
+    background-color:#fff;
     /* opacity: 0.8; */
     font-size: 20px;
     color:black;
@@ -149,8 +149,8 @@ hr{
     width: 200px;
     border-radius: 20px;
     color:black;
-     /* background-color:#fff;
-    opacity: 0.8; */
+     background-color:#fff;
+    /*opacity: 0.8; */
     backdrop-filter: blur(20px);
     font-size: 20px;
      text-align: center;
@@ -163,8 +163,8 @@ hr{
     width: 200px;
     border-radius: 20px;
      color:black;
-    /* background-color:#fff;
-    opacity: 0.8; */
+     background-color:#fff;
+   /* opacity: 0.8; */
     backdrop-filter: blur(20px);
     font-size: 20px;
     text-align: center;
