@@ -145,12 +145,34 @@ nav>ul{
   .overlay{
     position: absolute;
     width: 200px;
+<<<<<<< HEAD
     height: 200px;
    background-color:#fff;
    /* backdrop-filter: blur(0px);  */
    overflow: hidden; 
    border-radius: 20px;
    opacity: 0;
+=======
+     border-radius: 20px;
+    background-color:#fff;
+    /* opacity: 0.8; */
+    font-size: 20px;
+    color:black;
+    transition: transform 0.5s ease;
+    text-align: center;
+    display : flex;
+   justify-content: center;
+   align-items: center;
+   overflow:hidden;  
+  position: relative; 
+  backdrop-filter: blur(20px);
+}
+.box1 h1{
+
+    font-size: 20px;
+    bottom:translatey(-100%) ;
+    position:absolute;
+>>>>>>> 022353b238fdbdd7648c2d3ac475ae1d39528839
   
   
 }
@@ -188,6 +210,7 @@ nav>ul{
   width: 100%;
 }
 }
+<<<<<<< HEAD
 .lower-overlay{
   padding: 10px;
  
@@ -201,6 +224,35 @@ nav>ul{
   display: flex;
   justify-content:space-between;
   gap: 100px;
+=======
+.box2{
+     height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    color:black;
+     background-color:#fff;
+    /*opacity: 0.8; */
+    backdrop-filter: blur(20px);
+    font-size: 20px;
+     text-align: center;
+    display : flex;
+   justify-content: center;
+   align-items: center;
+}
+.box3{
+     height: 200px;
+    width: 200px;
+    border-radius: 20px;
+     color:black;
+     background-color:#fff;
+   /* opacity: 0.8; */
+    backdrop-filter: blur(20px);
+    font-size: 20px;
+    text-align: center;
+    display : flex;
+   justify-content: center;
+   align-items: center;
+>>>>>>> 022353b238fdbdd7648c2d3ac475ae1d39528839
 }
 /* second page header hover */
 
