@@ -10,19 +10,23 @@
     margin: 0px;
     padding: 0px;
     margin: auto;
+    box-sizing: border-box;
 }
+
+
+
 
 body{
-    /* background:url("https://yucca.co.za/wp-content/uploads/2025/09/yucca-packaging-homepage-intro-plastic-cups-for-iced-chilled-drinks_mobile.jpg"); */
-    background-image: url("yucca2.jpg");
+   background-image: url("https://yucca.co.za/wp-content/uploads/2025/09/yucca-packaging-homepage-intro-plastic-cups-for-iced-chilled-drinks-2.jpg");
    background-repeat: no-repeat;
     background-size: cover;
+     width: 100%;
+    height: 550px;
+
 }
 
-
 header{
-    height: 50px;
-     /* width: 100%;  */
+    height: 40px;
      display: flex;
      justify-content: space-between;
      gap: 20px;
@@ -76,104 +80,130 @@ nav>ul{
     left: 30px;
     top: 10px;
 }
-
-
 .icon>ul{
     list-style: none;
    display: flex;
    justify-content: space-between;
    gap: 20px;
- 
-
-  
-}
+ }
 .icon>ul>li>a{
    text-decoration: none;
    color:black;
 }
 .text{
-    /* font-size: 39.5315px ; */
     font-size: 50px;
    font-family: 'Magnetik', sans-serif;
    color:#1D1D1B;
-  
    font-weight: 300;
    margin-left: 20px;
-
+   position: relative;
 }
+
 .big-box{
-    height: 250px;
-    width: 700px;
+  height: 500px;
+  width: 900px;
+  padding-left: 100px;
+  display:flex;
+  justify-content: space-between;
+  gap: 20px;
+  
+   
+}
+.a{ 
+   width: 200px; 
+   height: 200px;
+   background-color: rgba(255, 255, 255, 0.315);
+   backdrop-filter: blur(20px);
+   border-radius: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   flex-direction: column;
+   gap: 60px;
+  
+}
+.b{
+    /* background-color: red; */
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 20px;
     display: flex;
-    justify-content: space-around;
-   margin-left: 40px;
-}
+    justify-content: center;
+    align-items:center;
 
-.box1{
-      height: 200px;
+  }
+  .b p{
+    color: black;
+    font-weight: 200;
+    transition: .5s ease;
+  }
+  .a:hover .b p{
+     margin-top: -30px;
+  }
+  .overlay{
+    position: absolute;
     width: 200px;
-     border-radius: 20px;
-    /* background-color:#fff; */
-    /* opacity: 0.8; */
-    font-size: 20px;
-    color:black;
-    transition: transform 0.5s ease;
-    text-align: center;
-    display : flex;
-   justify-content: center;
-   align-items: center;
-   overflow:hidden;  
-  position: relative; 
-  backdrop-filter: blur(20px);
-}
-.box1 h1{
-
-    font-size: 20px;
-    bottom:translatey(-100%) ;
-    position:absolute;
+    height: 200px;
+   background-color:#fff;
+   /* backdrop-filter: blur(0px);  */
+   overflow: hidden; 
+   border-radius: 20px;
+   opacity: 0;
   
-} 
-.box1:hover h1{
-    bottom: translatey(0%);
+  
+}
+.upper-overlay{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 10px;
+ 
+}
+.slide-upper{
+    font-size: 10px;
+   overflow: hidden;
+   height:10px;
+   margin-left: 10px;
+  
+}
+
+.slide-upper p{
+  transition: .5s ease;
+  margin-top: 20px;
+ 
+}
+.a:hover .slide-upper p{
+  margin-top: 20px;
+}
+.a:hover {
+   .slide-upper p{
+    margin-top: 0px;
+   }
+   .overlay{
     opacity: 1;
-  
+   }
+   .left-to-right{
+  width: 100%;
 }
-hr{
-
-  background-color: black;
-   height: 0px;
-   width: 100%;
 }
-.box2{
-     height: 200px;
-    width: 200px;
-    border-radius: 20px;
-    color:black;
-     /* background-color:#fff;
-    opacity: 0.8; */
-    backdrop-filter: blur(20px);
-    font-size: 20px;
-     text-align: center;
-    display : flex;
-   justify-content: center;
-   align-items: center;
+.lower-overlay{
+  padding: 10px;
+ 
 }
-.box3{
-     height: 200px;
-    width: 200px;
-    border-radius: 20px;
-     color:black;
-    /* background-color:#fff;
-    opacity: 0.8; */
-    backdrop-filter: blur(20px);
-    font-size: 20px;
-    text-align: center;
-    display : flex;
-   justify-content: center;
-   align-items: center;
+.left-to-right{
+  border: 0.6px solid black;
+  transition: .5s ease;
+  width: 0px;
 }
-
+.lower-arrow{
+  display: flex;
+  justify-content:space-between;
+  gap: 100px;
+}
 /* second page header hover */
+
 .link{
   color:black;
   text-decoration: none;
@@ -191,13 +221,49 @@ hr{
   transform: translateX(-50%);
  border-top-right-radius: 10px;
  border-top-left-radius: 10px;
+ transition: all .2s ease;
+}
+.link1{
+  position: relative;
 }
 
 .link1:hover::after{
     width: 30px;
 }
+
+.shop-curtain{
+   position:absolute ;
+  background-color: red; 
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  /* border-radius: 8px;  */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-400px);
+  transition: all .8s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.nav-item:hover .shop-curtain{
+   opacity: 1;
+  visibility: visible;
+  transform: translateY(0); 
+  display: block;
+  top:0px;
+  left: 0px;
+  width: 100%;
+.nav-item{
+position: absolute;
+  }
+
+}
+
 .link2:hover::after{
-    width: 50px;
+    width: 80px;
 }
 .link3:hover::after{
     width: 42px;
@@ -209,18 +275,10 @@ hr{
     width: 45px;
 }
 
-.link1:hover{
-  height: 200px;
-  width: 200px;
-  background-color: #fff;
-  opacity: 0.6;
-}
 .package{
      background-color:#DFDAC6 ;
      height: 100vh;
      position: relative;
-    
-
 }
       
 .package-image{
@@ -276,35 +334,7 @@ hr{
    width: 100%;
    font-size: 40px;
 }
-  /* .category {
-  
-  height: 500px;
-  width: 1050px;
-  background-image: url(".jpg");
-  background-size: cover;
-  background-position: center;
-
-} 
-.cat{
-    height: 250px;
-    width: 750px;
-    gap: 20px;
-    display:flex;
-    justify-content: space-around;
-}
-.boxx{
- height: 200px;
- width: 200px;
- display: flex;
- justify-content: center;
- align-items:center;
- backdrop-filter: blur(20px);
- color:black;
-} */
-
-
-
-.category {
+ .category {
   position: relative;
   height: 600px;
   width: 1050px;
@@ -318,15 +348,16 @@ hr{
 .bg {
   position: absolute;
   inset: 0;
+  object-fit: cover;
   background-size: cover;
   background-position: center;
-  /* opacity: 0; */
+
   transition: opacity .5s ease-in-out;
-} */
+} 
 
 /* Default visible background */
 .bg1 {
-  background-image: url("https://yucca.co.za/wp-content/uploads/2025/09/yucca-packaging-for-food-service-takeout-catering-deli-smoothies-coffee-desserts-600x427.jpg");
+  background-image: url("https://yucca.co.za/wp-content/uploads/2025/09/yucca-packaging-for-food-service-takeout-catering-deli-smoothies-coffee-desserts-1200x853.jpg");
   /* opacity: 1; */
 }
 
@@ -349,22 +380,12 @@ hr{
   /* height: 100%; */
   padding-top: 50px;
   align-self: center;
+  transition: .3s ease;
 
 
 }
-
-.boxx {
-  width: 200px;
-  height: 200px;
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color:black;
-  font-size: 22px;
-  cursor: pointer;
-  transition: all .3s ease;
+.boxx{
+  transition: all .5s ease;
 }
 
 .boxx:hover {
@@ -390,6 +411,307 @@ https://yucca.co.za/wp-content/uploads/2025/09/yucca-packaging-meat-poultry-seaf
 https://yucca.co.za/wp-content/uploads/2025/09/yucca-packaging-for-food-service-takeout-catering-deli-smoothies-coffee-desserts-600x427.jpg */
 
 
+
+
+.goal{
+    height:350px;
+   width: 1050px;
+   /* background-color: #F7F4E9;  */
+   background-color: #FFFDF5;
+}
+ .g1{
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.g1 h1{
+ padding-top: 40px;
+   font-weight: 400;
+  font-size: 30px;
+ }
+ .g1 p{
+ padding-top: 40px;
+ font-size: 13px;
+ font-weight: 100;
+padding-bottom: 10px;
+ }
+.G1 button{
+  
+   background-color: #1D1D1B;
+   color: #fff;
+   border-radius: 8px;
+   padding: 5px;
+   font-size: 10px;
+}
+.G1{
+  display: flex;
+  flex-direction: column;
+}
+hr{
+  color: black;
+   height: 1px;
+   width: 100%;
+}
+.g2{
+   padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.g{
+  display: flex;
+  justify-content: row;
+  gap: 20px;
+}
+.g i{
+  padding-top: 40px;
+  
+}
+.g h1{
+ padding-top: 40px;
+   font-weight: 400;
+  font-size: 20px;
+}
+.G2 p{
+  padding-top: 40px;
+ font-size: 13px;
+ font-weight: 100;
+ }
+
+.shop{
+  height: 200px;
+  width: 1050px;
+  background-color:  #FFFDF5;
+  display: flex;
+  justify-content: space-between;
+}
+.s1{
+ margin-bottom: 10px;
+ margin-left: 5px;
+}
+.buton{
+  margin-bottom: 10px;
+ margin-right: 10px;
+
+}
+.buton button{
+  background-color: black;
+  padding: 4px 2px 2px 2px;
+  color: white;
+  border-radius: 5px;
+}
+
+.product{
+  height: 400px;
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color:#FFFDF5 ;
+}
+.card{
+  height: 300px;
+  width: 400px;
+  background-color: #DFDAC6;
+ opacity: 0.7;
+ border-radius: 20px;
+ /* background-image: url("https://yucca.co.za/wp-content/uploads/2025/09/KG-CH-2-600x600.jpg"); */
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ padding-right: 1px;
+}
+.card1{
+background-image: url("https://yucca.co.za/wp-content/uploads/2025/08/KG-SW-B-250-600x600.jpg");
+
+}
+.card2{
+  background-image: url("https://yucca.co.za/wp-content/uploads/2025/09/KG-CH-2-600x600.jpg");
+}
+.card3{
+  background-image: url("https://yucca.co.za/wp-content/uploads/2025/09/YP-JU9-600x600.jpg");
+}
+.card4{
+  background-image: url("https://yucca.co.za/wp-content/uploads/2025/08/YP-JYF90-600x600.jpg");
+}
+.custom{
+  background-color: #002800;
+   height: 400px;
+  width: 1050px;
+  padding-top: 20px;
+}
+.outer{
+  height: 200px;
+  width: 1050px;
+  display: flex;
+ justify-content: space-between;
+ margin-top: 10px;
+}
+.text{
+  margin-top: 10px;
+  position: relative;
+ 
+}
+.text  h6{
+  padding-bottom: 30px;
+   color: white;
+   font-size: 20px;
+   font-weight: 100;
+}
+.text p{
+  color: white;
+  font-size: 15px;
+}
+.transparent{
+ height: 300px;  
+    width: 300px;
+    margin-right: 10px;
+    margin-top: 10px;
+    /* background-color: red; */
+}
+
+.pack{
+  background-image: url("https://yucca.co.za/wp-content/uploads/2025/05/menu-600x600.png");
+   height: 200px;  
+    width: 300px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   /* padding-bottom: 40px; */
+}
+ 
+.factory{
+  height: 450px;
+  width: 1050px;
+  background-color:#FFFDF5 ;
+   padding-bottom: 10px;
+}
+.t{
+   display: flex;
+ justify-content: space-between;
+ padding-bottom: 30px;
+}
+.t-left{
+  margin-top: 20px;
+  margin-left: 10px;
+} 
+.t-right{
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.solutions{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+
+}
+.solution1{
+  height: 300px;
+  width: 300px;
+  display: flex;
+ flex-direction: column;
+ margin-left: 40px;
+}
+
+.grid{
+ color: black;
+ margin-left:10px;
+}
+.grid i{
+  padding-right: 10px;
+}
+.footer{
+  height: 400px;
+  width:1050px;
+  background-color: #DFDAC6;
+}
+.heading{
+  color: black;
+  font-size: 25px;
+  font-weight: 100;
+  padding-left: 10px;
+  padding-top: 40px;
+}
+.block{
+  height: 300px;
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+}
+.f{
+  background-image: url("https://yucca.co.za/wp-content/themes/yucca/src/assets/images/logo-icon.svg");
+  height: 220px;
+  width: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.f1{
+  height: 220px;
+  width: 220px;
+ border: 1px solid #002800;
+ border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #002800;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: 200;
+  font-size: 20px;
+  transition: all .8s ease;
+}
+.sliding-up {
+  height: 30px;
+  width: 200px;
+ 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sliding-up p{
+ transition: all .8s ease;
+ transform: scale(1.1);
+  transform: translateY(15px);
+ 
+}
+
+
+.f1:hover .sliding-up p{
+ transform: translateY(-20px);
+  color:#fff;
+}
+
+.f1:hover{
+  border-radius: 60px;
+  
+}
+
+.back1:hover{
+  background-image: url("https://yucca.co.za/wp-content/uploads/2025/09/yucca-packaging-for-cold-warm-hot-food-card-449x600.jpg");
+}
+.back2:hover{
+  background-image: url("https://yucca.co.za/wp-content/uploads/2025/09/food-processing-nav-600x205.jpg");
+}
+.back3:hover{
+  background-image: url("https://yucca.co.za/wp-content/uploads/2025/09/yucca-packaging-agriculture-strawberry-blueberry-gooseberry-grapes-kiwi-avo-card-450x600.jpg");
+}
+
+
+
+
+
+ 
 
 
 
