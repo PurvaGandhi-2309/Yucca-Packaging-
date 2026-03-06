@@ -224,7 +224,7 @@ nav>ul{
   display: flex;
   justify-content:space-between;
   gap: 100px;
-=======
+}
 .box2{
      height: 200px;
     width: 200px;
@@ -252,7 +252,7 @@ nav>ul{
     display : flex;
    justify-content: center;
    align-items: center;
->>>>>>> 022353b238fdbdd7648c2d3ac475ae1d39528839
+
 }
 /* second page header hover */
 
