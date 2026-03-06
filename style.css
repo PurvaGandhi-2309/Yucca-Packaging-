@@ -145,14 +145,14 @@ nav>ul{
   .overlay{
     position: absolute;
     width: 200px;
-<<<<<<< HEAD
+
     height: 200px;
    background-color:#fff;
    /* backdrop-filter: blur(0px);  */
    overflow: hidden; 
    border-radius: 20px;
    opacity: 0;
-=======
+
      border-radius: 20px;
     background-color:#fff;
     /* opacity: 0.8; */
@@ -172,7 +172,7 @@ nav>ul{
     font-size: 20px;
     bottom:translatey(-100%) ;
     position:absolute;
->>>>>>> 022353b238fdbdd7648c2d3ac475ae1d39528839
+
   
   
 }
@@ -210,7 +210,7 @@ nav>ul{
   width: 100%;
 }
 }
-<<<<<<< HEAD
+
 .lower-overlay{
   padding: 10px;
  
@@ -283,36 +283,7 @@ nav>ul{
     width: 30px;
 }
 
-.shop-curtain{
-   position:absolute ;
-  background-color: red; 
-  padding: 20px;
-  width: 200px;
-  height: 200px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-  /* border-radius: 8px;  */
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-400px);
-  transition: all .8s ease;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  
-}
-.nav-item:hover .shop-curtain{
-   opacity: 1;
-  visibility: visible;
-  transform: translateY(0); 
-  display: block;
-  top:0px;
-  left: 0px;
-  width: 100%;
-.nav-item{
-position: absolute;
-  }
 
-}
 
 .link2:hover::after{
     width: 80px;
