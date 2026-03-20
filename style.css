@@ -609,7 +609,8 @@ background-image: url("https://yucca.co.za/wp-content/uploads/2025/08/KG-SW-B-25
 }
 
 
-.left {  
+.left { 
+  height: 100px; 
   color: white;
   font-size: 60px;
   font-weight: 100;
