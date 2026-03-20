@@ -281,6 +281,7 @@ nav>ul{
 .package{
      background-color:#DFDAC6 ;
      height: 100vh;
+     width: 100%;
      position: relative;
 }
       
@@ -295,6 +296,7 @@ nav>ul{
    display:flex;
    justify-content: center;
    align-content: center;
+  
   
   
 }
@@ -322,21 +324,28 @@ nav>ul{
     justify-content: center;
     align-self: center;
 }
+
+/* .marquee-wrapper {
+  position: absolute;
+  height: 100px;
+  top: 50%;
+  width: 100%;
+  font-size: 80px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-50%);
+  white-space: nowrap;
+} */
 .marquee1{
-  display: block;
-  color:#1D1D1B;
-  position: absolute; 
- 
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  gap: 50px;
- /* width: 100vw;         Use full viewport width */
-  /* max-width: 100vw;     Prevent overflow */
-   box-sizing: border-box;
-   width: 100%;
-   font-size: 40px;
+  position:absolute;
+  height: 100px;
+  top: 50%;
+  width: 100vw;
+  font-size: 40px;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.802);
 }
+
  .category {
   position: relative;
   height: 600px;
@@ -512,9 +521,10 @@ hr{
   justify-content: space-between;
   gap: 20px;
   background-color:#FFFDF5 ;
+  /* flex-direction: column; */
 }
 .card{
-  height: 300px;
+  height: 250px;
   width: 400px;
   background-color: #DFDAC6;
  opacity: 0.7;
@@ -524,11 +534,20 @@ hr{
  background-position: center;
  background-size: cover;
  padding-right: 1px;
+ padding: 20px;
+ margin: 20px;
 }
 .card1{
 background-image: url("https://yucca.co.za/wp-content/uploads/2025/08/KG-SW-B-250-600x600.jpg");
 
 }
+/* .price{
+  height: 30px;
+  width: 150px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+} */
 .card2{
   background-image: url("https://yucca.co.za/wp-content/uploads/2025/09/KG-CH-2-600x600.jpg");
 }
@@ -559,15 +578,15 @@ background-image: url("https://yucca.co.za/wp-content/uploads/2025/08/KG-SW-B-25
 .text  h6{
   padding-bottom: 30px;
    color: white;
-   font-size: 20px;
+   font-size: 14px;
    font-weight: 100;
 }
 .text p{
   color: white;
-  font-size: 15px;
+  font-size: 30px;
 }
 .transparent{
- height: 300px;  
+   height: 300px;  
     width: 300px;
     margin-right: 10px;
     margin-top: 10px;
@@ -577,12 +596,33 @@ background-image: url("https://yucca.co.za/wp-content/uploads/2025/08/KG-SW-B-25
 .pack{
   background-image: url("https://yucca.co.za/wp-content/uploads/2025/05/menu-600x600.png");
    height: 200px;  
-    width: 300px;
+    width: 350px;
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
    /* padding-bottom: 40px; */
 }
+.sliding-solutions{
+  height: 150px;
+  width: 100%;
+  margin-top:10px; 
+}
+
+
+.left {  
+  color: white;
+  font-size: 60px;
+  font-weight: 100;
+  padding-top: 20px;
+  padding-bottom: 20px;
+} 
+
+
+
+
+
+
+
  
 .factory{
   height: 450px;
@@ -625,7 +665,7 @@ background-image: url("https://yucca.co.za/wp-content/uploads/2025/08/KG-SW-B-25
   padding-right: 10px;
 }
 .footer{
-  height: 400px;
+  height: 450px;
   width:1050px;
   background-color: #DFDAC6;
 }
@@ -710,6 +750,35 @@ background-image: url("https://yucca.co.za/wp-content/uploads/2025/08/KG-SW-B-25
   background-image: url("https://yucca.co.za/wp-content/uploads/2025/09/yucca-packaging-agriculture-strawberry-blueberry-gooseberry-grapes-kiwi-avo-card-450x600.jpg");
 }
 
+.About-links{
+  height: 40px;
+  width: 1000px;
+  background-color: #DFDAC6;
+ border: 1px solid #002800;
+ border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-left: 40px; */
+   font-weight: 200;
+  font-size: 12px;
+}
+.check-out{
+  display:flex;
+  flex-direction: row;
+  gap: 20px;
+  color: #002800;
+}
+.policies{
+ 
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.policies a{
+  text-decoration: none;
+   color:#002800;
+}
 
 
 
